@@ -1,16 +1,26 @@
-import {Route,Routes,Navigate} from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Main from './components/Main';
 import Signup from './components/Signup';
 import Login from './components/Login';
+import Accueil from './components/Accueil';
+import Shop from './components/shop';
+import Plantes from './components/mesPlantes';
+import Contact from './components/contact';
 
 function App() {
-  const user=localStorage.getItem("token")
+  const user = localStorage.getItem("token")
   return (
     <Routes>
-      {user && <Route path='/' exact element={<Main/>}/>}
-      <Route path='/signup' exact element={<Signup/>}/>
-      <Route path='/login' exact element={<Login/>}/>
-      <Route path='/' exact element={<Navigate replace to="/login"/>}/>
+      {user && <Route path='/' exact element={<Main />} />}
+      <Route path='/signup' exact element={<Signup />} />
+      <Route path='/login' exact element={<Login />} />
+      <Route path='/accueil' exact element={<Accueil />} />
+      <Route path='/shop' exact element={<Shop />} />
+      <Route path='/mesPlantes' exact element={<Plantes />} />
+      <Route path='/contact' exact element={<Contact />} />
+
+      <Route path='/' exact element={<Main />} />
+
     </Routes>
   );
 }
