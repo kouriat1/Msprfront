@@ -6,6 +6,8 @@ import Accueil from './components/Accueil';
 import Shop from './components/shop';
 import Plantes from './components/mesPlantes';
 import Contact from './components/contact';
+import MyCamera from './components/camera';
+
 
 function App() {
   const user = localStorage.getItem("token")
@@ -18,6 +20,8 @@ function App() {
       <Route path='/shop' exact element={<Shop />} />
       <Route path='/mesPlantes' exact element={<Plantes />} />
       <Route path='/contact' exact element={<Contact />} />
+      <Route path='/camera' exact element={<MyCamera />} />
+
 
       <Route path='/' exact element={<Main />} />
 

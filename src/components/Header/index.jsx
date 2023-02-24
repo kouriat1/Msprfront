@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './styles.module.css';
-import logo from '../img/logo.png'
+import logopng from '../img/logopng.png'
 
 const Header = () => {
     const handleLogout = () => {
@@ -10,7 +10,7 @@ const Header = () => {
     return (
         <div className={styles.main_container}>
             <nav className={styles.navbar}>
-                <img src={logo} />
+                <a href='/accueil'><img src={logopng} alt="" /></a>
                 <a href='/accueil'><h1>Accueil</h1></a>
                 <a href='/shop'><h1>Shop</h1></a>
                 <a href='/mesPlantes'><h1>Mes plantes</h1></a>
