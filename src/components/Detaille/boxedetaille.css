@@ -1,0 +1,80 @@
+.box_detaille {
+    width: 490px;
+    height: 10px;
+    background-color: "red";
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-left: -150px;
+}
+
+.box_detaille h2 {
+    position: relative;
+    font-size: 35px;
+    margin-bottom: 10px;
+    margin-top: -280px;
+    margin-left: 100px;
+}
+
+.box_content_detaille {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+}
+
+.box_text_detaille {
+    position: absolute;
+    top: 100%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 5mm;
+
+}
+
+
+.reserve_button {
+    position: absolute;
+    background-color: #3bb19b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 18px;
+    margin-top: 115px;
+    right: 360px;
+    z-index: 1;
+}
+
+.reserve_button:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.contact_button {
+    position: absolute;
+    right: -10px;
+    background-color: #3bb19b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 18px;
+    z-index: 1;
+    margin-top: 280px;
+}
+
+.contact_button:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.image_detaille {
+    margin-left: 660px;
+}

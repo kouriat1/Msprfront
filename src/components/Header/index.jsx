@@ -1,6 +1,7 @@
 import React from "react";
 import styles from './styles.module.css';
 import logopng from '../img/logopng.png'
+import icon_profil from '../img/icon_profil.png'
 
 const Header = () => {
     const handleLogout = () => {
@@ -19,6 +20,7 @@ const Header = () => {
                 <button className={styles.white_btn} onClick={handleLogout}>
                     logout
                 </button>
+                <a href="http://localhost:3000/Profil"><img src={icon_profil} alt="icon_profile" className={styles.icon_profil} /></a>
             </nav>
         </div>
     );

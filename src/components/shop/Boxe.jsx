@@ -22,14 +22,15 @@ const Box = ({ title, name, city, date }) => {
                 height: "260px"
             }}
         >
-            <h2>{title}</h2>
             <div className="box-content">
                 <img src={planteee} alt="plant" className="box-image" />
+                <h2>{title}</h2>
                 <div className="box-text">
-                    <p><b>Nom:</b> {name}</p>
-                    <p><b>Ville:</b> {city}</p>
-                    <p><b>Date:</b> {date}</p>
+                    <p><b>Nom:</b> {name}</p><br />
+                    <p><b>Ville:</b> {city}</p><br />
+                    <p1><b>Date: {date}</b></p1>
                 </div>
+                <a href="http://localhost:3000/detaille"><button className="detail-button">Détails</button></a>
             </div>
         </div>
     );
