@@ -8,18 +8,14 @@ const Box = ({ title, name, city, date }) => {
         <div className="box"
             style={{
                 width: "500px",
-                height: "300px",
-                backgroundColor: "#f7f7f7",
+                height: "260px",
                 border: "1px solid #975F5F",
-                borderRadius: "5px",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
                 flexDirection: "column",
                 backgroundColor: "white",
                 borderRadius: "10%",
-                width: "480px",
-                height: "260px"
             }}
         >
             <div className="box-content">

@@ -1,0 +1,95 @@
+.boxe_plante {
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.boxe_plante:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.boxe_plante2 {
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 150px;
+    margin-top: -210px;
+}
+
+.boxe_plante2:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.boxe_plante2 h1 {
+    color: brown;
+}
+
+.mes_plantes {
+    position: absolute;
+    width: 235px;
+    height: 27px;
+    margin-left: 474px;
+    margin-top: 60px;
+    font-size: 7mm;
+}
+
+.mes_plantes img {
+    width: 180px;
+    height: 200px;
+    margin-top: -10px;
+    margin-left: -50px;
+}
+
+.mes_plantes .plante2 {
+    margin-top: -10px;
+    height: 250px;
+    width: 200px;
+}
+
+.boxe_plante {
+    margin-left: 150px;
+    margin-top: -195px;
+}
+
+.boxe_plante h1 {
+    position: relative;
+    color: brown;
+    margin-top: -100px;
+}
+
+.text_info {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    font-size: 4mm;
+
+}
+
+.contenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+}
+
+.contenu h1 {
+    font-size: 30px;
+    margin-left: 120px;
+    margin-top: -160px;
+
+}
+
+.mes_plantes .button_ajout {
+    margin-top: 40px;
+    margin-left: 70px;
+    background-color: #3bb19b;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.button_ajout:hover {
+    transform: scale(0.9);
+    transition: all 0.3s ease-in-out;
+}
