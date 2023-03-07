@@ -1,0 +1,221 @@
+.titre_ann {
+    color: #637A30;
+    font-size: 7mm;
+    text-align: center;
+}
+
+.form_cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c0ccaa;
+    position: relative;
+    width: 720px;
+    height: 840px;
+    left: 350px;
+    border-radius: 50px;
+}
+
+.form_field_titre label,
+.form_field_titre input {
+    display: block;
+}
+
+.form_field_nom label,
+.form_field_nom input {
+    display: block;
+    margin-top: 10px;
+
+    /* Ajout d'une marge pour l'espace entre les champs */
+}
+
+.form_field_titre {
+    width: 100%;
+}
+
+.form_field_titre label {
+    position: relative;
+    font-weight: bold;
+    font-size: 5.8mm;
+    margin-left: 119px;
+    margin-top: -424px;
+}
+
+.form_field_titre input {
+    display: block;
+    position: relative;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    margin-top: 20px;
+    width: 578px;
+    height: 57px;
+    margin-left: -167px;
+    margin-top: 10px;
+    border: 3px solid gray;
+
+
+}
+
+
+.form_field_nom label {
+    position: relative;
+    display: block;
+    font-weight: bold;
+    font-size: 5.8mm;
+    margin-left: -197px;
+    margin-top: -369px;
+}
+
+.form_field_nom input {
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    margin-top: 10px;
+    width: 578px;
+    height: 57px;
+    margin-left: -482px;
+    border: 3px solid gray;
+
+}
+
+
+.form_field_ville {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.form_field_ville label {
+    font-weight: bold;
+    font-size: 5.8mm;
+    margin-bottom: 5px;
+    margin-top: -225px;
+    margin-left: -289px;
+}
+
+.form_field_ville input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 578px;
+    margin-left: -576px;
+    height: 57px;
+    border: 3px solid gray;
+
+}
+
+
+.form_field_description label {
+    display: block;
+    font-size: 5.8mm;
+    margin-bottom: 10px;
+    margin-top: 7px;
+    margin-left: -323px;
+}
+
+.form_field_description textarea {
+    display: block;
+    width: 578px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    resize: vertical;
+    margin-left: -579px;
+    border: 3px solid gray;
+
+}
+
+/* .form_field_date_depart {
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: -323px;
+    
+    margin-top: 10px;
+} */
+
+.form_field_date_depart label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 5.8mm;
+    margin-top: 368px;
+    margin-left: -990px;
+
+}
+
+.form_field_date_depart input[type="date"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: -63px;
+    margin-left: -579px;
+    width: 200px;
+    border: 3px solid gray;
+
+}
+
+.form_field_date_retour label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 5.8mm;
+    margin-top: 358px;
+    margin-left: -250px;
+}
+
+.form_field_date_retour input[type="date"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: -43px;
+    margin-left: -204px;
+    width: 200px;
+    border: 3px solid gray;
+
+}
+
+.form_field_photo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 5.8mm;
+    margin-top: 592px;
+    margin-left: -1020px;
+
+}
+
+.form_field_photo input[type="file"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: -800px;
+    margin-left: -583px;
+    width: 200px;
+    background-color: #3bb19b;
+
+
+}
+
+.envoie_ann {
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #3bb19b;
+    margin-top: 752px;
+    margin-left: -390px;
+    border: 3px solid gray;
+
+}

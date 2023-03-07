@@ -53,7 +53,7 @@ const Plantes = () => {
                         </div>
                     </div>
                 </div>
-                <button className="button_ajout">Déposer une annonce</button>
+                <a href="http://localhost:3000/Profil"><button className="button_ajout">Déposer une annonce</button></a>
             </div>
         </div>
     );
