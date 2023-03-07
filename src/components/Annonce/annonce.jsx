@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Header from "../Header";
-import "./profil.css";
+import "./annonce.css";
 
-const Profil = () => {
+const Annonce = () => {
     const [titre, setTitre] = useState("");
     const [nom, setNom] = useState("");
     const [ville, setVille] = useState("");
@@ -151,4 +151,4 @@ const Profil = () => {
     );
 };
 
-export default Profil;
+export default Annonce;

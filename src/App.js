@@ -8,7 +8,7 @@ import Plantes from './components/mesPlantes';
 import Contact from './components/contact';
 import MyCamera from './components/camera';
 import Detaille from './components/Detaille/detaille';
-import Profil from './components/Profil/profil';
+import Annonce from './components/Annonce/annonce';
 
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
       <Route path='/contact' exact element={<Contact />} />
       <Route path='/camera' exact element={<MyCamera />} />
       <Route path='/Detaille' exact element={<Detaille />} />
-      <Route path='/Profil' exact element={<Profil />} />
+      <Route path='/Annonce' exact element={<Annonce />} />
 
 
 
