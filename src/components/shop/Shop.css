@@ -37,3 +37,47 @@ button[type="submit"].recherch_btn {
 button[type="submit"]:hover {
     background-color: #0069d9;
 }
+
+/*Resposive pour les ecrans ayants 952px en large*/
+@media (max-width: 952px) {
+
+    form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    input[type="text"].search_bar {
+        padding: 10px;
+        border: 2px solid gray;
+        border-radius: 20px;
+        font-size: 20px;
+        width: 550px;
+        margin: 0 auto;
+        background-image: url('../img/recherche.png');
+        background-position: 480px center;
+        /* Positionne l'icône à gauche de la barre de recherche */
+        background-repeat: no-repeat;
+        padding-left: -20px;
+        /* Décale le texte pour laisser de la place à l'icône */
+        background-size: 30px;
+        margin-left: 130px;
+    }
+
+    button[type="submit"].recherch_btn {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        background-color: #007bff;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+        margin-right: 110px;
+        width: 150px;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #0069d9;
+    }
+}

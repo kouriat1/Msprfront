@@ -36,3 +36,28 @@ a {
 	border-radius: 50%;
 	object-fit: cover;
 }
+
+/* Pour les écrans ayant une largeur maximale de 952px */
+@media (max-width: 952px) {
+	.navbar {
+		display: flex;
+		flex-direction: row;
+		height: auto;
+		padding: 1.5% 0;
+	}
+
+	.nav_item {
+		margin: 0 2%;
+	}
+
+	.white_btn {
+		margin: 3% auto 0;
+	}
+
+	.navbar ul {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 90%;
+	}
+}

@@ -1,0 +1,61 @@
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    /* background-image: url('../img/nature1.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat; */
+}
+
+.homepage-container h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0.5;
+        transform: translateY(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.homepage-container p {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    animation: fadein 2s;
+}
+
+
+.homepage-container p {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.shop-button {
+    background-color: green;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    animation: fadein 2s;
+}
+
+.shop-button:hover {
+    background-color: darkgreen;
+}

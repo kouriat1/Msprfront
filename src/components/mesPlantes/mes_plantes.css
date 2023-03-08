@@ -1,102 +1,254 @@
-.mes_plantes h1 {
-    margin-left: 200px;
-    width: 300px;
-    margin-top: -35px;
-    color: brown;
+/* Pour les écrans de taille supérieure à 768px */
+@media only screen and (min-width: 768px) {
+
+    /* Pour taille pc */
+    .mes_plantes h1 {
+        margin-left: -200px;
+        width: 300px;
+        margin-top: -35px;
+        color: brown;
+    }
+
+    .boxe_plante {
+        box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .boxe_plante:hover {
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .boxe_plante2 {
+        box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+        margin-left: 155px;
+        /* ajustement de la marge pour la deuxième boîte */
+        margin-top: -210px;
+    }
+
+    .boxe_plante2:hover {
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .boxe_plante2 h1 {
+        color: brown;
+    }
+
+    .mes_plantes {
+        position: absolute;
+        width: 235px;
+        height: 27px;
+        margin-left: 474px;
+        margin-top: 60px;
+        font-size: 7mm;
+    }
+
+    .mes_plantes img {
+        width: 180px;
+        height: 200px;
+        margin-top: -10px;
+        margin-left: -50px;
+    }
+
+    .mes_plantes .plante2 {
+        margin-top: -10px;
+        height: 250px;
+        width: 200px;
+    }
+
+    .boxe_plante {
+        margin-left: 150px;
+        margin-top: -195px;
+    }
+
+    .boxe_plante h1 {
+        position: relative;
+        color: brown;
+        margin-top: -100px;
+    }
+
+    .text_info {
+        position: absolute;
+        top: 50%;
+        left: 40px;
+        transform: translateY(-50%);
+        font-size: 4mm;
+
+    }
+
+    .contenu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px;
+        position: relative;
+    }
+
+    .contenu h1 {
+        font-size: 30px;
+        margin-left: 120px;
+        margin-top: -160px;
+
+    }
+
+    .mes_plantes .button_ajout {
+        margin-top: 80px;
+        margin-left: 10px;
+        background-color: #3bb19b;
+        width: 300px;
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    .button_ajout:hover {
+        transform: scale(0.9);
+        transition: all 0.3s ease-in-out;
+    }
 }
 
-.boxe_plante {
-    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+/* Pour les écrans ayant une largeur maximale de 952px */
+@media (max-width: 952px) {
+    .mes_plantes {
+        position: static;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .mes_plantes img {
+        width: 20%;
+        height: 500%;
+        margin-top: 20px;
+        margin-left: 42.02%;
+    }
+
+    .boxe_plante {
+        margin: 20px auto;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+
+    .boxe_plante2 {
+        margin: 20px auto;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+    }
+
+    .contenu {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .contenu h1 {
+        font-size: 24px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .text_info {
+        position: static;
+        transform: none;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .mes_plantes .button_ajout {
+        margin-top: 20px;
+        margin-left: 0;
+        width: 40%;
+    }
+
+    .mes_plantes img:nth-of-type(2) {
+        height: 700%;
+        margin-left: 40.02%;
+    }
+
+    .mes_plantes h1 {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
 }
 
-.boxe_plante:hover {
-    transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
-}
+/*Pour les media max-width: 375px*/
+@media (max-width: 375px) {
+    .mes_plantes {
+        position: static;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
 
-.boxe_plante2 {
-    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
-    margin-left: 150px;
-    margin-top: -210px;
-}
+    .mes_plantes img {
+        width: 50%;
+        height: 42%;
+        margin-top: -10px;
+        margin-left: 25%;
+    }
 
-.boxe_plante2:hover {
-    transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
-}
+    .boxe_plante {
+        margin: 10px auto;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
 
-.boxe_plante2 h1 {
-    color: brown;
-}
+    .boxe_plante2 {
+        margin: 10px auto;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+    }
 
-.mes_plantes {
-    position: absolute;
-    width: 235px;
-    height: 27px;
-    margin-left: 474px;
-    margin-top: 60px;
-    font-size: 7mm;
-}
+    .contenu {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
 
-.mes_plantes img {
-    width: 180px;
-    height: 200px;
-    margin-top: -10px;
-    margin-left: -50px;
-}
+    .mes_plantes .contenu h1 {
+        font-size: 18px;
+        margin-left: 10px;
+        margin-top: 1px;
+        font-size: 7mm;
+        color: brown;
+    }
 
-.mes_plantes .plante2 {
-    margin-top: -10px;
-    height: 250px;
-    width: 200px;
-}
+    .text_info {
+        position: static;
+        transform: none;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
 
-.boxe_plante {
-    margin-left: 150px;
-    margin-top: -195px;
-}
+    .mes_plantes .button_ajout {
+        margin-top: 10px;
+        margin-left: 0;
+        width: 60%;
+        background-color: #3bb19b;
+        border-radius: 8px;
+    }
 
-.boxe_plante h1 {
-    position: relative;
-    color: brown;
-    margin-top: -100px;
-}
+    .mes_plantes img:nth-of-type(2) {
+        height: auto;
+        margin-left: 25%;
+    }
 
-.text_info {
-    position: absolute;
-    top: 50%;
-    left: 40px;
-    transform: translateY(-50%);
-    font-size: 4mm;
-
-}
-
-.contenu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 10px;
-    position: relative;
-}
-
-.contenu h1 {
-    font-size: 30px;
-    margin-left: 120px;
-    margin-top: -160px;
-
-}
-
-.mes_plantes .button_ajout {
-    margin-top: 80px;
-    margin-left: 150px;
-    background-color: #3bb19b;
-    width: 300px;
-    height: 50px;
-    border-radius: 10px;
-}
-
-.button_ajout:hover {
-    transform: scale(0.9);
-    transition: all 0.3s ease-in-out;
+    .mes_plantes h1 {
+        margin-top: 5px;
+        margin-left: -260px;
+        font-size: 5mm;
+        color: brown;
+    }
 }

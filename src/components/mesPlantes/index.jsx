@@ -10,7 +10,7 @@ const Plantes = () => {
         <div>
             <Header />
             <div className="mes_plantes">
-                <h1><b>Mes Plantes</b></h1><br />
+                <h1><b>Mes Plantes:</b></h1><br />
                 <img src={plante1} alt="plante1" />
                 <div className="boxe_plante" style={{
                     width: "430px",
