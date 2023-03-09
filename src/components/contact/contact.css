@@ -1,0 +1,140 @@
+.contact-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1d7a46;
+    line-height: 1.5;
+    margin-right: -35%;
+    margin-top: -36%;
+    text-align: center;
+}
+
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 500px;
+    margin-left: 0%;
+}
+
+.contact-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    padding: 30px;
+    margin-right: 40%;
+    margin-top: -5%;
+}
+
+.contact-text-container h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1d7a46;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    /* pour centrer horizontalement le formulaire */
+}
+
+.contact-form label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4f4f4f;
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    color: #4f4f4f;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-form button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #3d9970;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact-form button:hover {
+    background-color: #1d7a46;
+}
+
+.contact-image {
+    width: 28%;
+    margin-right: 20%;
+}
+
+.contact-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin-left: -10%;
+
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 95%;
+    transform: translateY(-50%);
+}
+
+.social-icons p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 100px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
