@@ -3,41 +3,57 @@ import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import styles from "./styles.module.css";
 
-const Signup = () => {
-	const [data, setData] = useState({
-		firstName: "",
-		lastName: "",
-		city:"",
-		phone:"",
-		email: "",
-		password: "",
-	});
-	const [error, setError] = useState("");
+// const Signup = () => {
+// 	const [data, setData] = useState({
+// 		firstName: "",
+// 		lastName: "",
+// 		city:"",
+// 		phone:"",
+// 		email: "",
+// 		password: "",
+// 	});
+
+function Signup() {
+	const [email, setEmail] = useState('');
+	const [password, setPassword] = useState('');
+	const [telephone, setPhone] = useState('');
+	const [ville, setVille] = useState('');
+	const [nom, SetNom] = useState('');
+	const [prenom, SetPrenom] = useState('');
+
+
+
+	
+
+const [error, setError] = useState("");
 	const navigate = useNavigate();
 
-	const handleChange = ({ currentTarget: input }) => {
-		setData({ ...data, [input.name]: input.value });
-	};
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = "http://localhost:8085/api/users";
-			const { data: res } = await axios.post(url, data);
-			navigate("/login");
-			console.log(res.message);
+		  const response = await axios.post("http://localhost:3005/Auth/signup", {
+			email,
+			password,
+			telephone,
+			ville,
+			nom,
+			prenom,
+
+		  });
+		  const token = response.data.token;
+		  localStorage.setItem('token', token);
+		  // rediriger vers la page d'accueil après la connexion
+		//   window.location.href = '/accueil';
+		alert("user Added")
 		} catch (error) {
-			if (
-				error.response &&
-				error.response.status >= 400 &&
-				error.response.status <= 500
-			) {
-				setError(error.response.data.message);
-			}
+		  alert(error)
+		  console.error(error);
 		}
-	};
+	  };
 
 	return (
+		console.log(email,password,ville),
 		<div className={styles.signup_container}>
 			<div className={styles.signup_form_container}>
 				<div className={styles.left}>
@@ -55,8 +71,8 @@ const Signup = () => {
 							type="text"
 							placeholder="First Name"
 							name="firstName"
-							onChange={handleChange}
-							value={data.firstName}
+							value={prenom}
+							onChange={(e) => SetPrenom(e.target.value)}
 							required
 							className={styles.input}
 						/>
@@ -64,8 +80,8 @@ const Signup = () => {
 							type="text"
 							placeholder="Last Name"
 							name="lastName"
-							onChange={handleChange}
-							value={data.lastName}
+							onChange={(e) => SetNom(e.target.value)}
+							value={nom}
 							required
 							className={styles.input}
 						/>
@@ -73,8 +89,8 @@ const Signup = () => {
 							type="text"
 							placeholder="City"
 							name="city"
-							onChange={handleChange}
-							value={data.city}
+							onChange={(e) => setVille(e.target.value)}
+							value={ville}
 							required
 							className={styles.input}
 						/>
@@ -82,8 +98,8 @@ const Signup = () => {
 							type="tel"
 							placeholder="Phone Number"
 							name="phone"
-							onChange={handleChange}
-							value={data.phone}
+							onChange={(e) => setPhone(e.target.value)}
+							value={telephone}
 							required
 							className={styles.input}
 						/>
@@ -91,8 +107,8 @@ const Signup = () => {
 							type="email"
 							placeholder="Email"
 							name="email"
-							onChange={handleChange}
-							value={data.email}
+							onChange={(e) => setEmail(e.target.value)}
+							value={email}
 							required
 							className={styles.input}
 						/>
@@ -100,8 +116,8 @@ const Signup = () => {
 							type="password"
 							placeholder="Password"
 							name="password"
-							onChange={handleChange}
-							value={data.password}
+							onChange={(e) => setPassword(e.target.value)}
+							value={password}
 							required
 							className={styles.input}
 						/>
