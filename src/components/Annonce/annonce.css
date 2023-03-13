@@ -2,6 +2,7 @@
     color: #637A30;
     font-size: 7mm;
     text-align: center;
+    margin-left: 2%;
 }
 
 .form_cont {
@@ -10,10 +11,10 @@
     align-items: center;
     background-color: #c0ccaa;
     position: relative;
-    width: 720px;
-    height: 840px;
-    left: 350px;
-    border-radius: 50px;
+    width: 50%;
+    height: auto;
+    left: 27%;
+    border-radius: 7%;
 }
 
 .form_field_titre label,
@@ -38,7 +39,7 @@
     font-weight: bold;
     font-size: 5.8mm;
     margin-left: 119px;
-    margin-top: -424px;
+    margin-top: -440px;
 }
 
 .form_field_titre input {
@@ -52,7 +53,7 @@
     width: 578px;
     height: 57px;
     margin-left: -167px;
-    margin-top: 10px;
+    margin-top: 0px;
     border: 3px solid gray;
 
 
@@ -64,8 +65,8 @@
     display: block;
     font-weight: bold;
     font-size: 5.8mm;
-    margin-left: -197px;
-    margin-top: -369px;
+    margin-left: -228px;
+    margin-top: -376px;
 }
 
 .form_field_nom input {
@@ -76,7 +77,7 @@
     margin-top: 10px;
     width: 578px;
     height: 57px;
-    margin-left: -482px;
+    margin-left: -520px;
     border: 3px solid gray;
 
 }
@@ -94,7 +95,7 @@
     font-size: 5.8mm;
     margin-bottom: 5px;
     margin-top: -225px;
-    margin-left: -289px;
+    margin-left: -309px;
 }
 
 .form_field_ville input {
@@ -103,7 +104,7 @@
     border: 1px solid #ccc;
     font-size: 16px;
     width: 578px;
-    margin-left: -576px;
+    margin-left: -601px;
     height: 57px;
     border: 3px solid gray;
 
@@ -114,8 +115,8 @@
     display: block;
     font-size: 5.8mm;
     margin-bottom: 10px;
-    margin-top: 7px;
-    margin-left: -323px;
+    margin-top: 62px;
+    margin-left: -346px;
 }
 
 .form_field_description textarea {
@@ -127,7 +128,7 @@
     border: 1px solid #ccc;
     font-size: 16px;
     resize: vertical;
-    margin-left: -579px;
+    margin-left: -603px;
     border: 3px solid gray;
 
 }
@@ -146,7 +147,7 @@
     margin-bottom: 5px;
     text-align: center;
     font-size: 5.8mm;
-    margin-top: 368px;
+    margin-top: 421px;
     margin-left: -990px;
 
 }
@@ -169,7 +170,7 @@
     margin-bottom: 5px;
     text-align: center;
     font-size: 5.8mm;
-    margin-top: 358px;
+    margin-top: 420px;
     margin-left: -250px;
 }
 
@@ -191,7 +192,7 @@
     margin-bottom: 5px;
     text-align: center;
     font-size: 5.8mm;
-    margin-top: 592px;
+    margin-top: 611px;
     margin-left: -1020px;
 
 }
@@ -214,8 +215,8 @@
     height: 40px;
     border-radius: 15px;
     background-color: #3bb19b;
-    margin-top: 752px;
-    margin-left: -390px;
+    margin-top: 757px;
+    margin-left: -389px;
     border: 3px solid gray;
 
 }

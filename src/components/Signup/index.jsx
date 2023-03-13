@@ -21,39 +21,35 @@ function Signup() {
 	const [nom, SetNom] = useState('');
 	const [prenom, SetPrenom] = useState('');
 
-
-
-	
-
-const [error, setError] = useState("");
+	const [error, setError] = useState("");
 	const navigate = useNavigate();
 
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-		  const response = await axios.post("http://localhost:3005/Auth/signup", {
-			email,
-			password,
-			telephone,
-			ville,
-			nom,
-			prenom,
+			const response = await axios.post("http://localhost:3005/Auth/signup", {
+				email,
+				password,
+				telephone,
+				ville,
+				nom,
+				prenom,
 
-		  });
-		  const token = response.data.token;
-		  localStorage.setItem('token', token);
-		  // rediriger vers la page d'accueil après la connexion
-		//   window.location.href = '/accueil';
-		alert("user Added")
+			});
+			const token = response.data.token;
+			localStorage.setItem('token', token);
+			// rediriger vers la page d'accueil après la connexion
+			//   window.location.href = '/accueil';
+			alert("user Added")
 		} catch (error) {
-		  alert(error)
-		  console.error(error);
+			alert(error)
+			console.error(error);
 		}
-	  };
+	};
 
 	return (
-		console.log(email,password,ville),
+		console.log(email, password, ville),
 		<div className={styles.signup_container}>
 			<div className={styles.signup_form_container}>
 				<div className={styles.left}>

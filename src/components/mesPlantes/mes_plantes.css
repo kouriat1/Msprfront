@@ -3,14 +3,16 @@
 
     /* Pour taille pc */
     .mes_plantes h1 {
-        margin-left: -200px;
+        margin-left: -230px;
         width: 300px;
-        margin-top: -35px;
+        margin-top: -21%;
         color: brown;
+        font-size: 8mm;
     }
 
     .boxe_plante {
         box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+
     }
 
     .boxe_plante:hover {
@@ -20,7 +22,7 @@
 
     .boxe_plante2 {
         box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
-        margin-left: 155px;
+        margin-left: 70%;
         /* ajustement de la marge pour la deuxième boîte */
         margin-top: -210px;
     }
@@ -57,8 +59,8 @@
     }
 
     .boxe_plante {
-        margin-left: 150px;
-        margin-top: -195px;
+        margin-left: 70%;
+        margin-top: -85%;
     }
 
     .boxe_plante h1 {
@@ -86,7 +88,7 @@
     }
 
     .contenu h1 {
-        font-size: 30px;
+        font-size: 7mm;
         margin-left: 120px;
         margin-top: -160px;
 
@@ -94,7 +96,7 @@
 
     .mes_plantes .button_ajout {
         margin-top: 80px;
-        margin-left: 10px;
+        margin-left: 50%;
         background-color: #3bb19b;
         width: 300px;
         height: 50px;
@@ -103,7 +105,7 @@
 
     .button_ajout:hover {
         transform: scale(0.9);
-        transition: all 0.1s ease-in;
+        transition: all 0.3s ease-in;
     }
 
     .icon-profil img {

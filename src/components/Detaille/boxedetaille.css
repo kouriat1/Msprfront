@@ -10,8 +10,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
-    margin-left: -150px;
+    margin-top: 5%;
+    margin-left: -20%;
 }
 
 .box_detaille h2 {
@@ -48,8 +48,8 @@
     border: none;
     padding: 10px 20px;
     border-radius: 18px;
-    margin-top: 115px;
-    right: 360px;
+    margin-top: 27%;
+    right: 408px;
     z-index: 1;
 }
 
@@ -60,14 +60,14 @@
 
 .contact_button {
     position: absolute;
-    right: -10px;
+    right: -0%;
     background-color: #3bb19b;
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 18px;
     z-index: 1;
-    margin-top: 280px;
+    margin-top: 60%;
 }
 
 .contact_button:hover {

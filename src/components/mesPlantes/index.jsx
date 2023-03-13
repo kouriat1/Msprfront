@@ -8,9 +8,6 @@ import iconPar from '../img/icon parametre.png';
 import iconInfo from '../img/icon information.png';
 
 
-
-
-
 const Plantes = () => {
     return (
         <div>
@@ -20,7 +17,7 @@ const Plantes = () => {
                 <img src={plante1} alt="plante1" />
                 <div className="boxe_plante" style={{
                     width: "430px",
-                    height: "200px",
+                    height: "220px",
                     backgroundColor: "#f7f7f7",
                     border: "1px solid #975F5F",
                     display: "flex",
@@ -41,7 +38,7 @@ const Plantes = () => {
                 <img className="plante2" src={plante2} alt="plante2" />
                 <div className="boxe_plante2" style={{
                     width: "430px",
-                    height: "200px",
+                    height: "220px",
                     backgroundColor: "#f7f7f7",
                     border: "1px solid #975F5F",
                     display: "flex",
