@@ -102,9 +102,48 @@
     }
 
     .button_ajout:hover {
-        transform: scale(0.9);
-        transition: all 0.3s ease-in-out;
+        transform: scale(0.1);
+        transition: all 0.1s ease-in;
     }
+
+    .icon-profil img {
+        width: 3.5%;
+        height: 3.5%;
+        margin-top: 12%;
+        margin-left: 1%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .icon-profil img:hover {
+        transform: scale(1.2);
+    }
+
+    .icon-parametre img {
+        width: 3.5%;
+        height: 3.5%;
+        margin-top: 2%;
+        margin-left: 1%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .icon-parametre img:hover {
+        transform: scale(1.2);
+    }
+
+
+    .icon-information img {
+        width: 3.5%;
+        height: 3.5%;
+        margin-top: 2%;
+        margin-left: 1%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .icon-information img:hover {
+        transform: scale(1.2);
+    }
+
+
 }
 
 /* Pour les écrans ayant une largeur maximale de 952px */

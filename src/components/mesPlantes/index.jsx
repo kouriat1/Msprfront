@@ -1,8 +1,14 @@
 import React from "react";
 import Header from "../Header";
 import "./mes_plantes.css";
-import plante1 from '../img/plante1.jpeg'
-import plante2 from '../img/plante2.jpg'
+import plante1 from '../img/plante1.jpeg';
+import plante2 from '../img/plante2.jpg';
+import iconP from '../img/icon profil.png';
+import iconPar from '../img/icon parametre.png';
+import iconInfo from '../img/icon information.png';
+
+
+
 
 
 const Plantes = () => {
@@ -55,6 +61,16 @@ const Plantes = () => {
                 </div>
                 <a href="http://localhost:3000/Annonce"><button className="button_ajout">Déposer une annonce</button></a>
             </div>
+            <div className="icon-profil">
+                <a href="#"><img src={iconP} alt="icon profil" /></a>
+            </div>
+            <div className="icon-parametre">
+                <a href="#"> <img src={iconPar} alt="icon parametre" /></a>
+            </div>
+            <div className="icon-information">
+                <a href="http://localhost:3000/accueil" ><img src={iconInfo} alt="icon information" /></a>
+            </div>
+
         </div>
     );
 };
