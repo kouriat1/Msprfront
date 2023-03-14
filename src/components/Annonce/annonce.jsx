@@ -5,6 +5,7 @@ import axios from "axios";
 
 
 function Annonce() {
+    const user = JSON.parse(localStorage.getItem('userid'));
     const [titre, setTitre] = useState("");
     const [nom, setNom] = useState("");
     const [ville, setVille] = useState("");
@@ -12,9 +13,9 @@ function Annonce() {
     const [date_depart, setDateDebut] = useState("");
     const [date_retour, setDateFin] = useState("");
     const [photo, setPhoto] = useState("");
-    const [proprietaire_id, SetProp] = useState(1);
+    const [proprietaire_id, SetProp] = useState(user);
 
-
+    
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -33,7 +34,8 @@ function Annonce() {
 
             // rediriger vers la page d'accueil après la connexion
             //   window.location.href = '/accueil';
-            alert("annonce  Added")
+            // alert("annonce  Added",user)
+            console("s")
         } catch (error) {
             alert(error)
             console.error(error);
@@ -49,7 +51,7 @@ function Annonce() {
     // setPhoto(null);
     return (
 
-        console.log(localStorage),
+        console.log(user),
         <div className="annonce">
             <Header /><br />
             <h1 className="titre_ann"><b>Déposer votre annonce</b></h1><br />

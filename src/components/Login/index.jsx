@@ -18,7 +18,9 @@ function Login() {
         password
       });
       const token = response.data.token;
-      localStorage.setItem('token', token);
+      const user = response.data.Userid;
+      localStorage.setItem('userid', user);
+      // alert(localStorage.getItem("userid"))
       // rediriger vers la page d'accueil après la connexion
       window.location.href = '/accueil';
     } catch (error) {

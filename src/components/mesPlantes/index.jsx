@@ -58,7 +58,7 @@ const Plantes = () => {
                         </div>
                     </div>
                 </div>
-                <a href="http://localhost:3000/Annonce"><button className="button_ajout"><b>Déposer une annonce</b></button></a>
+                <a href="http://localhost:3001/Annonce"><button className="button_ajout"><b>Déposer une annonce</b></button></a>
             </div>
             <div className="icon-profil">
                 <a href="#"><img src={iconP} alt="icon profil" /></a>
@@ -67,10 +67,10 @@ const Plantes = () => {
                 <a href="#"> <img src={iconPar} alt="icon parametre" /></a>
             </div>
             <div className="icon-information">
-                <a href="http://localhost:3000/accueil" ><img src={iconInfo} alt="icon information" /></a>
+                <a href="http://localhost:3001/accueil" ><img src={iconInfo} alt="icon information" /></a>
             </div>
             <div className="icon-historique">
-                <a href="http://localhost:3000/historique" ><img src={iconHi} alt="icon Historique" /></a>
+                <a href="http://localhost:3001/historique" ><img src={iconHi} alt="icon Historique" /></a>
             </div>
 
         </div>
