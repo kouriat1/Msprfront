@@ -1,10 +1,10 @@
 import React from "react";
 import Header from "../Header";
 import "./contact.css";
-import nature2 from '../img/nature2.png';
 import fb from '../img/facebook.png';
 import insta from '../img/instagram.png';
 import twit from '../img/twitter.png';
+import plante from '../img/planteimg.png'
 
 
 
@@ -18,7 +18,7 @@ const Contact = () => {
                     en remplissant le formulaire :
                 </p>
                 <div className="contact-image">
-                    <img src={nature2} alt="arbre image" />
+                    <img src={plante} alt="arbre image" />
                 </div>
                 <div className="social-icons">
                     <p>Suivez-nous : &nbsp; </p>

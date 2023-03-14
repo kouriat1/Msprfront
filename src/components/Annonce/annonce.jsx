@@ -4,7 +4,7 @@ import "./annonce.css";
 import axios from "axios";
 
 
-function Annonce () {
+function Annonce() {
     const [titre, setTitre] = useState("");
     const [nom, setNom] = useState("");
     const [ville, setVille] = useState("");
@@ -12,43 +12,43 @@ function Annonce () {
     const [date_depart, setDateDebut] = useState("");
     const [date_retour, setDateFin] = useState("");
     const [photo, setPhoto] = useState("");
-    const [proprietaire_id,SetProp]=useState(1);
+    const [proprietaire_id, SetProp] = useState(1);
 
-  
+
 
     const handleSubmit = async (e) => {
-		e.preventDefault();
-		try {
-			const response = await axios.post("http://localhost:3005/annonces/add", {
-				titre,
-				nom,
-				ville,
-				description,
-				date_depart,
-				date_retour,
+        e.preventDefault();
+        try {
+            const response = await axios.post("http://localhost:3005/annonces/add", {
+                titre,
+                nom,
+                ville,
+                description,
+                date_depart,
+                date_retour,
                 photo,
                 proprietaire_id
 
-			});
-			
-			// rediriger vers la page d'accueil après la connexion
-			//   window.location.href = '/accueil';
-			alert("annonce  Added")
-		} catch (error) {
-			alert(error)
-			console.error(error);
-		}
-	};
- // //vider les champs après la soumassion
-        // setTitre("");
-        // setNom("");
-        // setVille("");
-        // setDescription("");
-        // setDateDebut("");
-        // setDateFin("");
-        // setPhoto(null);
+            });
+
+            // rediriger vers la page d'accueil après la connexion
+            //   window.location.href = '/accueil';
+            alert("annonce  Added")
+        } catch (error) {
+            alert(error)
+            console.error(error);
+        }
+    };
+    // //vider les champs après la soumassion
+    // setTitre("");
+    // setNom("");
+    // setVille("");
+    // setDescription("");
+    // setDateDebut("");
+    // setDateFin("");
+    // setPhoto(null);
     return (
-        
+
         console.log(localStorage),
         <div className="annonce">
             <Header /><br />
@@ -56,74 +56,74 @@ function Annonce () {
             <div className="form_cont">
                 <form onSubmit={handleSubmit}>
                     <div className="form_field_titre">
-                        <label htmlFor="titre"><b>Titre</b></label>
+                        <label htmlFor="titre">Titre*</label>
                         <input
                             type="text"
                             id="titre"
                             value={titre}
-							onChange={(e) => setTitre(e.target.value)}
+                            onChange={(e) => setTitre(e.target.value)}
                             placeholder="Titre d'annonce..."
                         />
                     </div>
                     <div className="form_field_nom">
                         <br /><br />
-                        <label htmlFor="nom"><b>Nom</b></label>
+                        <label htmlFor="nom">Nom*</label>
 
                         <input
                             type="text"
                             id="nom"
                             value={nom}
-							onChange={(e) => setNom(e.target.value)}
+                            onChange={(e) => setNom(e.target.value)}
                             placeholder="Nom du plante..."
                             required
                         />
                     </div>
                     <div className="form_field_ville">
-                        <label htmlFor="ville"><b>Ville</b></label>
+                        <label htmlFor="ville">Ville*</label>
                         <input
                             type="text"
                             id="ville"
                             value={ville}
-							onChange={(e) => setVille(e.target.value)}
+                            onChange={(e) => setVille(e.target.value)}
                             placeholder="La ville..."
                             required
                         />
                     </div>
                     <div className="form_field_description">
-                        <label htmlFor="description"><b>Description</b></label>
+                        <label htmlFor="description">Description*</label>
                         <textarea
                             type="text"
                             id="description"
                             value={description}
-							onChange={(e) => setDescription(e.target.value)}
+                            onChange={(e) => setDescription(e.target.value)}
                             placeholder="Description de l'annonce..."
                             required
                         />
                     </div>
                     <div className="form_field_date_depart">
-                        <label htmlFor="dateDebut"><b>Date de départ :</b></label>
+                        <label htmlFor="dateDebut">Date de départ* :</label>
                         <br />
                         <input
                             type="date"
                             id="dateDebut"
                             value={date_depart}
-							onChange={(e) => setDateDebut(e.target.value)}
+                            onChange={(e) => setDateDebut(e.target.value)}
                             required
                         />
                     </div>
                     <div className="form_field_date_retour">
-                        <label htmlFor="dateFin"><b>Date de retour :</b></label>
+                        <label htmlFor="dateFin">Date de retour* :</label>
                         <br />
                         <input
                             type="date"
                             id="dateFin"
                             value={date_retour}
-							onChange={(e) => setDateFin(e.target.value)}
-                            // required
+                            onChange={(e) => setDateFin(e.target.value)}
+                        // required
                         />
                     </div>
                     <div className="form_field_photo">
-                        <label htmlFor="photo"><b>Ajouter Photo</b></label>
+                        <label htmlFor="photo">Ajouter Photo*</label>
                         <br />
                         <input
                             type="file"
@@ -131,10 +131,12 @@ function Annonce () {
                             accept="image/*"
                             value={photo}
                             onChange={(e) => setPhoto(e.target.value)}
-                            />
+                        />
                     </div>
                     <button className="envoie_ann" type="submit">Envoyer</button>
+
                 </form>
+
             </div>
         </div>
 

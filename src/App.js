@@ -9,6 +9,7 @@ import Contact from './components/contact';
 import MyCamera from './components/camera';
 import Detaille from './components/Detaille/detaille';
 import Annonce from './components/Annonce/annonce';
+import Historique from './components/Historique/historique';
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
       <Route path='/camera' exact element={<MyCamera />} />
       <Route path='/Detaille' exact element={<Detaille />} />
       <Route path='/Annonce' exact element={<Annonce />} />
-
+      <Route path='/Historique' exact element={<Historique />} />
 
 
       <Route path='/' exact element={<Main />} />

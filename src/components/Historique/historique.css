@@ -1,0 +1,25 @@
+.historique-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.historique-plante {
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.historique-plante h2 {
+    margin-top: 0;
+}
+
+.historique-plante p {
+    margin: 5px 0;
+}
+
+.historique-plante b {
+    font-weight: bold;
+}

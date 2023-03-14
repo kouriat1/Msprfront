@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
@@ -8,7 +8,7 @@ function Login() {
   const [password, setPassword] = useState('');
 
 
-  
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -26,6 +26,20 @@ function Login() {
       console.error(error);
     }
   };
+
+  const handleBackButton = (event) => {
+    event.preventDefault();
+    window.location.replace("/");
+  };
+
+
+  useEffect(() => {
+    window.addEventListener("popstate", handleBackButton);
+
+    return () => {
+      window.removeEventListener("popstate", handleBackButton);
+    };
+  }, []);
 
   return (
     <div className={styles.login_container}>

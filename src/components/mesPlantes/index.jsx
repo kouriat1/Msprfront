@@ -6,6 +6,8 @@ import plante2 from '../img/plante2.jpg';
 import iconP from '../img/icon profil.png';
 import iconPar from '../img/icon parametre.png';
 import iconInfo from '../img/icon information.png';
+import iconHi from '../img/iconHi.png';
+
 
 
 const Plantes = () => {
@@ -16,47 +18,47 @@ const Plantes = () => {
                 <h1><b>Mes Plantes:</b></h1><br />
                 <img src={plante1} alt="plante1" />
                 <div className="boxe_plante" style={{
-                    width: "430px",
-                    height: "220px",
+                    width: "390px",
+                    height: "190px",
                     backgroundColor: "#f7f7f7",
                     border: "1px solid #975F5F",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
                     flexDirection: "column",
-                    borderRadius: "10%",
+                    borderRadius: "6%",
                 }}>
                     <div className="contenu">
                         <h1> Plante Turnosole</h1>
                         <div className="text_info">
                             <p><b>Nom:</b> Turnosole</p><br />
                             <p><b>Ville:</b> paris</p><br />
-                            <p1><b>Date: From 02/04/23 to 01/05/23</b></p1>
+                            <p className="date_info"><em>Date: From 02/04/23 to 01/05/23</em></p>
                         </div>
                     </div>
                 </div>
                 <img className="plante2" src={plante2} alt="plante2" />
                 <div className="boxe_plante2" style={{
-                    width: "430px",
-                    height: "220px",
+                    width: "390px",
+                    height: "190px",
                     backgroundColor: "#f7f7f7",
                     border: "1px solid #975F5F",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
                     flexDirection: "column",
-                    borderRadius: "10%",
+                    borderRadius: "6%",
                 }}>
                     <div className="contenu">
                         <h1> Rosier Rose</h1>
                         <div className="text_info">
                             <p><b>Nom:</b> Rosier Rose</p><br />
                             <p><b>Ville:</b> Paris</p><br />
-                            <p1><b>Date: From 15/02/23 to 21/05/23</b></p1>
+                            <p className="date_info"><em>Date: From 15/02/23 to 21/05/23</em></p>
                         </div>
                     </div>
                 </div>
-                <a href="http://localhost:3001/Annonce"><button className="button_ajout">Déposer une annonce</button></a>
+                <a href="http://localhost:3000/Annonce"><button className="button_ajout"><b>Déposer une annonce</b></button></a>
             </div>
             <div className="icon-profil">
                 <a href="#"><img src={iconP} alt="icon profil" /></a>
@@ -66,6 +68,9 @@ const Plantes = () => {
             </div>
             <div className="icon-information">
                 <a href="http://localhost:3000/accueil" ><img src={iconInfo} alt="icon information" /></a>
+            </div>
+            <div className="icon-historique">
+                <a href="http://localhost:3000/historique" ><img src={iconHi} alt="icon Historique" /></a>
             </div>
 
         </div>

@@ -6,7 +6,7 @@ import logopng from '../img/logopng.png'
 const Header = () => {
     const handleLogout = () => {
         localStorage.removeItem("token");
-        window.location.reload();
+        window.location.href = "/Login";
     };
     return (
         <div className={styles.main_container}>
