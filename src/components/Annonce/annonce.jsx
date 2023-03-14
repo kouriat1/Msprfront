@@ -1,67 +1,55 @@
 import React, { useState } from "react";
 import Header from "../Header";
 import "./annonce.css";
+import axios from "axios";
 
-const Annonce = () => {
+
+function Annonce () {
     const [titre, setTitre] = useState("");
     const [nom, setNom] = useState("");
     const [ville, setVille] = useState("");
     const [description, setDescription] = useState("");
-    const [dateDebut, setDateDebut] = useState("");
-    const [dateFin, setDateFin] = useState("");
+    const [date_depart, setDateDebut] = useState("");
+    const [date_retour, setDateFin] = useState("");
     const [photo, setPhoto] = useState("");
+    const [proprietaire_id,SetProp]=useState(1);
 
+  
 
-    const handleTitreChange = (e) => {
-        setTitre(e.target.value);
-    };
+    const handleSubmit = async (e) => {
+		e.preventDefault();
+		try {
+			const response = await axios.post("http://localhost:3005/annonces/add", {
+				titre,
+				nom,
+				ville,
+				description,
+				date_depart,
+				date_retour,
+                photo,
+                proprietaire_id
 
-    const handleNomChange = (e) => {
-        setNom(e.target.value);
-    };
-
-    const handleVilleChange = (e) => {
-        setVille(e.target.value);
-    };
-    const handleDescriptionChange = (e) => {
-        setDescription(e.target.value);
-    };
-
-    const handleDateDebutChange = (e) => {
-        setDateDebut(e.target.value);
-    };
-
-    const handleDateFinChange = (e) => {
-        setDateFin(e.target.value);
-    };
-    const handlePhotoChange = (e) => {
-        setPhoto(e.target.files[0]);
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(`Titre : ${titre}`);
-        console.log(`Nom : ${nom}`);
-        console.log(`Ville : ${ville}`);
-        console.log(`Date de début : ${dateDebut}`);
-        console.log(`Date de fin : ${dateFin}`);
-        console.log(`Photo : ${photo}`);
-
-        const formData = new FormData();
-        formData.append("photo", photo);
-        //envoie le formaData au serveur
-
-        //vider les champs après la soumassion
-        setTitre("");
-        setNom("");
-        setVille("");
-        setDescription("");
-        setDateDebut("");
-        setDateFin("");
-        setPhoto(null);
-    };
-
+			});
+			
+			// rediriger vers la page d'accueil après la connexion
+			//   window.location.href = '/accueil';
+			alert("annonce  Added")
+		} catch (error) {
+			alert(error)
+			console.error(error);
+		}
+	};
+ // //vider les champs après la soumassion
+        // setTitre("");
+        // setNom("");
+        // setVille("");
+        // setDescription("");
+        // setDateDebut("");
+        // setDateFin("");
+        // setPhoto(null);
     return (
+        
+        console.log(localStorage),
         <div className="annonce">
             <Header /><br />
             <h1 className="titre_ann"><b>Déposer votre annonce</b></h1><br />
@@ -73,7 +61,7 @@ const Annonce = () => {
                             type="text"
                             id="titre"
                             value={titre}
-                            onChange={handleTitreChange}
+							onChange={(e) => setTitre(e.target.value)}
                             placeholder="Titre d'annonce..."
                         />
                     </div>
@@ -85,7 +73,7 @@ const Annonce = () => {
                             type="text"
                             id="nom"
                             value={nom}
-                            onChange={handleNomChange}
+							onChange={(e) => setNom(e.target.value)}
                             placeholder="Nom du plante..."
                             required
                         />
@@ -96,7 +84,7 @@ const Annonce = () => {
                             type="text"
                             id="ville"
                             value={ville}
-                            onChange={handleVilleChange}
+							onChange={(e) => setVille(e.target.value)}
                             placeholder="La ville..."
                             required
                         />
@@ -107,7 +95,7 @@ const Annonce = () => {
                             type="text"
                             id="description"
                             value={description}
-                            onChange={handleDescriptionChange}
+							onChange={(e) => setDescription(e.target.value)}
                             placeholder="Description de l'annonce..."
                             required
                         />
@@ -118,8 +106,8 @@ const Annonce = () => {
                         <input
                             type="date"
                             id="dateDebut"
-                            value={dateDebut}
-                            onChange={handleDateDebutChange}
+                            value={date_depart}
+							onChange={(e) => setDateDebut(e.target.value)}
                             required
                         />
                     </div>
@@ -129,9 +117,9 @@ const Annonce = () => {
                         <input
                             type="date"
                             id="dateFin"
-                            value={dateFin}
-                            onChange={handleDateFinChange}
-                            required
+                            value={date_retour}
+							onChange={(e) => setDateFin(e.target.value)}
+                            // required
                         />
                     </div>
                     <div className="form_field_photo">
@@ -141,7 +129,9 @@ const Annonce = () => {
                             type="file"
                             id="photo"
                             accept="image/*"
-                            onChange={handlePhotoChange} />
+                            value={photo}
+                            onChange={(e) => setPhoto(e.target.value)}
+                            />
                     </div>
                     <button className="envoie_ann" type="submit">Envoyer</button>
                 </form>

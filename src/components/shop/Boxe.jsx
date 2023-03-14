@@ -26,7 +26,7 @@ const Box = ({ title, name, city, date }) => {
                     <p><b>Ville:</b> {city}</p><br />
                     <p1><b>Date: {date}</b></p1>
                 </div>
-                <a href="http://localhost:3000/detaille"><button className="detail-button">Détails</button></a>
+                <a href="http://localhost:3001/detaille"><button className="detail-button">Détails</button></a>
             </div>
         </div>
     );
