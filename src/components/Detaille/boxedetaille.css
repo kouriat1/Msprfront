@@ -48,7 +48,7 @@
     border: none;
     padding: 10px 20px;
     border-radius: 18px;
-    margin-top: 27%;
+    margin-top: 62%;
     right: 408px;
     z-index: 1;
 }
@@ -67,7 +67,7 @@
     padding: 10px 20px;
     border-radius: 18px;
     z-index: 1;
-    margin-top: 60%;
+    margin-top: 27%;
 }
 
 .contact_button:hover {
@@ -77,6 +77,19 @@
 
 .image_detaille {
     margin-left: 660px;
+}
+
+.owner_phone_number {
+    position: absolute;
+    top: 755%;
+    right: 0%;
+    background-color: #3bb19b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 18px;
+    z-index: 1;
+    transform: translateY(-50%);
 }
 
 /*Responsive pour les écrans du largeur de 952px*/
@@ -131,8 +144,8 @@
         border: none;
         padding: 10px 20px;
         border-radius: 18px;
-        margin-top: 115px;
-        right: 360px;
+        margin-top: 320px;
+        right: 409px;
         z-index: 1;
     }
 
@@ -143,14 +156,14 @@
 
     .contact_button {
         position: absolute;
-        right: -10px;
+        right: -1px;
         background-color: #3bb19b;
         color: white;
         border: none;
         padding: 10px 20px;
         border-radius: 18px;
         z-index: 1;
-        margin-top: 280px;
+        margin-top: 143px;
     }
 
     .contact_button:hover {
