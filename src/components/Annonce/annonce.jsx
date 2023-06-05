@@ -35,7 +35,7 @@ function Annonce() {
             // rediriger vers la page d'accueil après la connexion
             //   window.location.href = '/accueil';
             // alert("annonce  Added",user)
-            console("s")
+            window.alert("Votre plante '" + titre + "' a été ajoutée avec succès")
         } catch (error) {
             alert(error)
             console.error(error);
